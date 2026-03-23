@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brew & Bloom Coffee Café – where every cup tells a story. Specialty coffees, fresh pastries, and a cozy atmosphere." />
+  <title>Brew &amp; Bloom Coffee Café</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">Brew<span>&amp;Bloom</span></a>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">☕ Est. 2018</div>
+      <h1>Sip the <span>Perfect</span> Moment</h1>
+      <p>Specialty brews crafted with passion, served in a warm and welcoming space where every visit feels like home.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        <a href="#contact" class="btn btn-outline">Find Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image" role="img" aria-label="Coffee cup illustration">☕</div>
+        <div class="about-text">
+          <h2 class="section-title">Our Story</h2>
+          <p class="section-subtitle">More than coffee – a community</p>
+          <p>Brew &amp; Bloom was born from a simple belief: that a great cup of coffee has the power to bring people together. Since 2018, we've sourced single-origin beans from ethical farms, roasted them in-house, and brewed each cup to order.</p>
+          <p>Our cozy café is a creative haven where neighbours become friends, ideas bloom, and every barista is an artisan dedicated to the craft of the perfect pour.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Origins</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Daily Cups</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">7</div>
+              <div class="stat-label">Years Open</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MENU ==================== -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-subtitle">Something for every taste and time of day</p>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="all" role="tab">All</button>
+        <button class="tab-btn" data-tab="hot" role="tab">Hot Drinks</button>
+        <button class="tab-btn" data-tab="cold" role="tab">Cold Drinks</button>
+        <button class="tab-btn" data-tab="food" role="tab">Food</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Hot Drinks -->
+        <div class="menu-card" data-category="hot">
+          <div class="menu-card-icon">☕</div>
+          <h3>Espresso</h3>
+          <p>Rich, bold single-origin shot with a perfect golden crema.</p>
+          <div class="menu-card-footer">
+            <span class="price">$3.50</span>
+            <span class="tag">Hot</span>
+          </div>
+        </div>
+        <div class="menu-card" data-category="hot">
+          <div class="menu-card-icon">🥛</div>
+          <h3>Flat White</h3>
+          <p>Silky steamed milk poured over a double ristretto – smooth and intense.</p>
+          <div class="menu-card-footer">
+            <span class="price">$4.50</span>
+            <span class="tag">Hot</span>
+          </div>
+        </div>
+        <div class="menu-card" data-category="hot">
+          <div class="menu-card-icon">🫖</div>
+          <h3>Chai Latte</h3>
+          <p>Warm spiced chai blended with steamed oat milk and a hint of honey.</p>
+          <div class="menu-card-footer">
+            <span class="price">$4.75</span>
+            <span class="tag">Hot</span>
+          </div>
+        </div>
+        <div class="menu-card" data-category="hot">
+          <div class="menu-card-icon">🍫</div>
+          <h3>Mocha</h3>
+          <p>Our espresso meets premium dark chocolate and velvety steamed milk.</p>
+          <div class="menu-card-footer">
+            <span class="price">$5.00</span>
+            <span class="tag">Hot</span>
+          </div>
+        </div>
+
+        <!-- Cold Drinks -->
+        <div class="menu-card" data-category="cold">
+          <div class="menu-card-icon">🧊</div>
+          <h3>Cold Brew</h3>
+          <p>12-hour slow-steeped coffee concentrate served over ice. Smooth &amp; strong.</p>
+          <div class="menu-card-footer">
+            <span class="price">$5.50</span>
+            <span class="tag">Cold</span>
+          </div>
+        </div>
+        <div class="menu-card" data-category="cold">
+          <div class="menu-card-icon">🍦</div>
+          <h3>Iced Vanilla Latte</h3>
+          <p>Chilled espresso with house-made vanilla syrup and fresh milk over ice.</p>
+          <div class="menu-card-footer">
+            <span class="price">$5.75</span>
+            <span class="tag">Cold</span>
+          </div>
+        </div>
+        <div class="menu-card" data-category="cold">
+          <div class="menu-card-icon">🥭</div>
+          <h3>Mango Frost Smoothie</h3>
+          <p>Blended fresh mango, banana, and coconut milk – a tropical escape.</p>
+          <div class="menu-card-footer">
+            <span class="price">$6.00</span>
+            <span class="tag">Cold</span>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="menu-card" data-category="food">
+          <div class="menu-card-icon">🥐</div>
+          <h3>Butter Croissant</h3>
+          <p>Freshly baked, flaky layers of buttery pastry – perfect with your morning brew.</p>
+          <div class="menu-card-footer">
+            <span class="price">$3.25</span>
+            <span class="tag">Pastry</span>
+          </div>
+        </div>
+        <div class="menu-card" data-category="food">
+          <div class="menu-card-icon">🍰</div>
+          <h3>Carrot Cake Slice</h3>
+          <p>Moist spiced cake with cream-cheese frosting and a walnut crunch.</p>
+          <div class="menu-card-footer">
+            <span class="price">$4.50</span>
+            <span class="tag">Cake</span>
+          </div>
+        </div>
+        <div class="menu-card" data-category="food">
+          <div class="menu-card-icon">🥗</div>
+          <h3>Avocado Toast</h3>
+          <p>Sourdough topped with smashed avo, chilli flakes, and a poached egg.</p>
+          <div class="menu-card-footer">
+            <span class="price">$9.50</span>
+            <span class="tag">Brunch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SPECIALS ==================== -->
+  <section id="specials" class="specials">
+    <div class="container">
+      <h2 class="section-title">Today's Specials</h2>
+      <p class="section-subtitle">Seasonal creations worth coming back for</p>
+      <div class="specials-grid">
+        <div class="special-card">
+          <span class="special-badge">🌸 Spring</span>
+          <h3>Cherry Blossom Latte</h3>
+          <p>Espresso infused with house-made cherry syrup, rose water, and steamed milk.</p>
+          <div class="special-price">$6.50</div>
+        </div>
+        <div class="special-card">
+          <span class="special-badge">🔥 Hot Pick</span>
+          <h3>Salted Caramel Cortado</h3>
+          <p>A bold espresso cortado drizzled with house salted caramel and sea-salt flakes.</p>
+          <div class="special-price">$5.75</div>
+        </div>
+        <div class="special-card">
+          <span class="special-badge">🌿 Vegan</span>
+          <h3>Matcha Cloud Latte</h3>
+          <p>Ceremonial-grade matcha whipped with oat milk into a light, frothy cloud.</p>
+          <div class="special-price">$6.00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Guests Say</h2>
+      <p class="section-subtitle">Real people, real love for coffee</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>"The flat white here is the best in the city – perfectly balanced, never bitter. I come every morning!"</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">👩</div>
+            <div>
+              <div class="reviewer-name">Sarah M.</div>
+              <div class="reviewer-info">Regular since 2019</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Cozy atmosphere, excellent cold brew, and the avocado toast is absolutely divine. My go-to work spot."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">👨</div>
+            <div>
+              <div class="reviewer-name">James T.</div>
+              <div class="reviewer-info">Freelance designer</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>"The baristas remember my order and always have a smile. It feels less like a café and more like a second home."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">👩‍🦱</div>
+            <div>
+              <div class="reviewer-name">Priya K.</div>
+              <div class="reviewer-info">Local resident</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Visit Us</h2>
+          <p>We'd love to welcome you. Drop in anytime, or reserve a table for a special occasion.</p>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <strong>Address</strong>
+              <span>42 Maple Street, Brooklyn, NY 11201</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div class="info-text">
+              <strong>Opening Hours</strong>
+              <span>Mon – Fri: 7am – 8pm<br>Sat – Sun: 8am – 9pm</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-text">
+              <strong>Phone</strong>
+              <span>(718) 555-0142</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-text">
+              <strong>Email</strong>
+              <span>hello@brewandbloom.cafe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option>Table Reservation</option>
+                <option>Private Event</option>
+                <option>Catering Inquiry</option>
+                <option>General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message ☕</button>
+            <div class="form-success" role="alert">
+              ✅ Thank you! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">Brew<span>&amp;Bloom</span></a>
+          <p>Specialty coffee, freshly baked treats, and a warm corner to call your own – every single day.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Brew &amp; Bloom Coffee Café. All rights reserved.</span>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" aria-label="Facebook">👥</a>
+          <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
