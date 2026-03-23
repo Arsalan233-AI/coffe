@@ -1,0 +1,21 @@
+{
+  "name": "coffee",
+  "version": "1.0.0",
+  "description": "A small coffee cafe website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arsalan233-AI/coffe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arsalan233-AI/coffe/issues"
+  },
+  "homepage": "https://github.com/Arsalan233-AI/coffe#readme"
+}
