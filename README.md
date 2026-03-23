@@ -1,4 +1,4 @@
-# Coffe & Co. Cafe
+# Coffee & Co. Cafe
 
 A small, responsive website for a neighborhood coffee cafe.
 
